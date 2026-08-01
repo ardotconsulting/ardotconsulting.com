@@ -1083,25 +1083,26 @@
       <div class="reveal">
         <span class="section-label">Contact</span>
         <h2 class="section-title">Let's talk</h2>
-        <p class="section-subtitle">Tell us about your workflows and what's slowing your team down. We'll get back to you within 24 hours.</p>
+        <p class="section-subtitle">Tell us about your workflows and what's slowing your team down. We'll be in touch to talk through your needs.</p>
       </div>
       <div class="contact-content">
         <div class="contact-info reveal">
           <p>Whether you have a specific automation project in mind or just want to explore what's possible, we're happy to have a no-pressure conversation about your needs.</p>
           <div class="contact-detail">
             <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
-            <span><a href="mailto:hello@ardotconsulting.com">hello@ardotconsulting.com</a></span>
+            <span><a href="mailto:ardotconsulting@tutamail.com">ardotconsulting@tutamail.com</a></span>
           </div>
           <div class="contact-detail">
             <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <span>Remote-first, serving clients globally</span>
           </div>
-          <div class="contact-detail">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Response within 24 hours</span>
-          </div>
         </div>
-        <form class="contact-form reveal" onsubmit="handleContactSubmit(event)">
+        <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/ardotconsulting@tutamail.com" method="POST">
+          <!-- FormSubmit.co config -->
+          <input type="hidden" name="_subject" value="New inquiry from ARDOT Consulting website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -1183,38 +1184,55 @@
 
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-    // Contact form handler
-    function handleContactSubmit(event) {
-      event.preventDefault();
-      const form = event.target;
-      const data = new FormData(form);
-      const name = data.get('name');
-      const email = data.get('email');
-      const company = data.get('company');
-      const industry = data.get('industry');
-      const message = data.get('message');
+    // Contact form handler - submits to FormSubmit.co
+    // On first submission, FormSubmit.co sends a confirmation email to
+    // ardotconsulting@tutamail.com — the user confirms once, then all
+    // future submissions are delivered automatically.
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = contactForm.querySelector('.form-submit');
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = 'Sending...';
+        btn.disabled = true;
 
-      // Build mailto link as a fallback (no backend on GitHub Pages)
-      const subject = encodeURIComponent(`Inquiry from ${name}${company ? ' at ' + company : ''}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\n` +
-        `Company: ${company || 'N/A'}\n` +
-        `Email: ${email}\n` +
-        `Industry: ${industry || 'N/A'}\n\n` +
-        `Message:\n${message}`
-      );
-
-      window.location.href = `mailto:hello@ardotconsulting.com?subject=${subject}&body=${body}`;
-
-      // Show confirmation
-      const btn = form.querySelector('.form-submit');
-      btn.innerHTML = 'Opening your email client...';
-      btn.disabled = true;
-
-      setTimeout(() => {
-        btn.innerHTML = 'Sent! We\'ll be in touch soon.';
-        btn.style.background = 'var(--accent-hover)';
-      }, 1500);
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success === 'success' || data.success) {
+            btn.innerHTML = 'Sent! We\'ll be in touch soon.';
+            btn.style.background = 'var(--accent-hover)';
+            contactForm.reset();
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(error => {
+          console.error('Form error:', error);
+          // Fallback: open mailto with form data
+          const data = new FormData(contactForm);
+          const name = data.get('name');
+          const email = data.get('email');
+          const company = data.get('company');
+          const industry = data.get('industry');
+          const message = data.get('message');
+          const subject = encodeURIComponent(`Inquiry from ${name}${company ? ' at ' + company : ''}`);
+          const body = encodeURIComponent(
+            `Name: ${name}\nCompany: ${company || 'N/A'}\nEmail: ${email}\nIndustry: ${industry || 'N/A'}\n\nMessage:\n${message}`
+          );
+          window.location.href = `mailto:ardotconsulting@tutamail.com?subject=${subject}&body=${body}`;
+          btn.innerHTML = 'Opening your email client...';
+          setTimeout(() => {
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+          }, 3000);
+        });
+      });
     }
 
     // Nav scroll effect
