@@ -1102,6 +1102,7 @@
           <input type="hidden" name="_subject" value="New inquiry from ARDOT Consulting website">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.ardotconsulting.com/?submitted=true">
           <input type="text" name="_honey" style="display:none">
           <div class="form-row">
             <div class="form-group">
@@ -1184,55 +1185,28 @@
 
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-    // Contact form handler - submits to FormSubmit.co
+    // Contact form — native POST to FormSubmit.co, then redirects back
+    // via the _next hidden field. No JavaScript interception needed;
+    // the browser handles the POST and redirect natively.
+    //
     // On first submission, FormSubmit.co sends a confirmation email to
     // ardotconsulting@tutamail.com — the user confirms once, then all
     // future submissions are delivered automatically.
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-      contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const btn = contactForm.querySelector('.form-submit');
-        const originalHTML = btn.innerHTML;
-        btn.innerHTML = 'Sending...';
-        btn.disabled = true;
 
-        fetch(contactForm.action, {
-          method: 'POST',
-          body: new FormData(contactForm),
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success === 'success' || data.success) {
-            btn.innerHTML = 'Sent! We\'ll be in touch soon.';
-            btn.style.background = 'var(--accent-hover)';
-            contactForm.reset();
-          } else {
-            throw new Error('Form submission failed');
-          }
-        })
-        .catch(error => {
-          console.error('Form error:', error);
-          // Fallback: open mailto with form data
-          const data = new FormData(contactForm);
-          const name = data.get('name');
-          const email = data.get('email');
-          const company = data.get('company');
-          const industry = data.get('industry');
-          const message = data.get('message');
-          const subject = encodeURIComponent(`Inquiry from ${name}${company ? ' at ' + company : ''}`);
-          const body = encodeURIComponent(
-            `Name: ${name}\nCompany: ${company || 'N/A'}\nEmail: ${email}\nIndustry: ${industry || 'N/A'}\n\nMessage:\n${message}`
-          );
-          window.location.href = `mailto:ardotconsulting@tutamail.com?subject=${subject}&body=${body}`;
-          btn.innerHTML = 'Opening your email client...';
-          setTimeout(() => {
-            btn.innerHTML = originalHTML;
-            btn.disabled = false;
-          }, 3000);
-        });
-      });
+    // If we were redirected back after submission, show a thank-you message
+    if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.innerHTML = '<div style="text-align:center;padding:40px 0;">' +
+          '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="margin-bottom:16px;">' +
+          '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 15.01 9 11.01"/>' +
+          '</svg>' +
+          '<h3 style="font-size:20px;font-weight:500;margin-bottom:8px;">Thank you!</h3>' +
+          '<p style="color:var(--text-secondary);font-size:15px;">Your message has been sent. We\'ll be in touch soon.</p>' +
+          '</div>';
+      }
+      // Clean the URL
+      window.history.replaceState({}, '', window.location.pathname);
     }
 
     // Nav scroll effect
