@@ -50,7 +50,7 @@
 
 | Who | What | Branch/Issue | Started | Status |
 |-----|------|-------------|---------|--------|
-| @ardot_coder_bot | Add analytics, SEO, and search indexing (Issue #11) | feat/analytics-seo | 2026-08-02 | In progress |
+| _(empty)_ | | | | | |
 
 ---
 
@@ -62,6 +62,7 @@
 | @ardot_coder_bot | Add GitHub Pages deployment workflow | PR #2 | 2026-08-01 |
 | @ardot_coder_bot | Wire up contact form (FormSubmit.co), update email, remove 24h promise | PR #4 (Issue #3) | 2026-08-01 |
 | @ardot_coder_bot | Remove mailto fallback, form uses FormSubmit.co only | PR #7 (Issue #6) | 2026-08-01 |
+| @ardot_coder_bot | Add open-source analytics, SEO, and search indexing | PR #16 (Issue #11) | 2026-08-02 |
 
 ---
 
