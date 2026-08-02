@@ -50,7 +50,7 @@
 
 | Who | What | Branch/Issue | Started | Status |
 |-----|------|-------------|---------|--------|
-| _(empty)_ | | | | |
+| @ardot_coder_bot | Add analytics, SEO, and search indexing (Issue #11) | feat/analytics-seo | 2026-08-02 | In progress |
 
 ---
 
@@ -74,6 +74,8 @@
 | 2026-08-01 | Contact email: ardotconsulting@tutamail.com | hello@ardotconsulting.com has no MX records; tutamail is the actual inbox |
 | 2026-08-01 | Remove "24 hour response" promise | No mechanism to guarantee response time yet |
 | 2026-08-01 | Form uses FormSubmit.co only, no mailto fallback | Mailto was opening user's email client in addition to FormSubmit submission |
+| 2026-08-02 | Use Plausible for analytics (open source, no cookies) | Per Issue #11: avoid Google Analytics. Plausible is open source, privacy-first, self-hostable. Using hosted SaaS initially; will self-host via Docker when VPS is available. |
+| 2026-08-02 | Use Bing Webmaster Tools for search indexing (not Google) | Per Issue #11: avoid Google Search Console. Sitemap submitted via robots.txt for all crawlers. |
 
 ---
 

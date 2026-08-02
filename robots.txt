@@ -1,0 +1,8 @@
+# robots.txt for https://www.ardotconsulting.com/
+# Allow all search engine crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.ardotconsulting.com/sitemap.xml

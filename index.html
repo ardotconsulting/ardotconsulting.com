@@ -5,6 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARDOT Consulting — AI Automation Solutions for Your Business</title>
   <meta name="description" content="ARDOT Consulting helps businesses implement AI solutions to automate repetitive tasks, reduce costs, and scale operations efficiently.">
+  <meta name="author" content="ARDOT Consulting">
+  <meta name="keywords" content="AI automation, workflow automation, business automation, AI consulting, document intelligence, AI integration">
+  <link rel="canonical" href="https://www.ardotconsulting.com/">
+
+  <!-- ===== Open Graph / Social Sharing ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ARDOT Consulting — AI Automation Solutions for Your Business">
+  <meta property="og:description" content="We help businesses implement AI solutions that eliminate manual, repetitive work — so your team can focus on what actually moves the needle.">
+  <meta property="og:url" content="https://www.ardotconsulting.com/">
+  <meta property="og:site_name" content="ARDOT Consulting">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ARDOT Consulting — AI Automation Solutions for Your Business">
+  <meta name="twitter:description" content="We help businesses implement AI solutions that eliminate manual, repetitive work — so your team can focus on what actually moves the needle.">
+
+  <!-- ===== Robots Meta ===== -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- ===== Plausible Analytics (open source, privacy-first, no cookies) ===== -->
+  <!-- Self-hosted instance: https://github.com/plausible/analytics -->
+  <!-- TODO: Replace with self-hosted Plausible URL once Docker instance is deployed -->
+  <script defer data-domain="ardotconsulting.com" src="https://plausible.io/js/script.js"></script>
+
+  <!-- ===== Structured Data (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ARDOT Consulting",
+    "description": "AI automation consulting — we help businesses implement AI solutions to automate repetitive tasks, reduce costs, and scale operations efficiently.",
+    "url": "https://www.ardotconsulting.com/",
+    "email": "ardotconsulting@tutamail.com",
+    "areaServed": "Worldwide",
+    "serviceType": "AI Automation Consulting",
+    "knowsAbout": [
+      "AI Strategy",
+      "Workflow Automation",
+      "AI Integration & APIs",
+      "Document Intelligence",
+      "Analytics & Reporting",
+      "Training & Handoff"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Remote-first"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1192,6 +1243,18 @@
     // On first submission, FormSubmit.co sends a confirmation email to
     // ardotconsulting@tutamail.com — the user confirms once, then all
     // future submissions are delivered automatically.
+    //
+    // Analytics: fire a Plausible custom event on submit so we can track
+    // contact form conversions. The event fires before the browser
+    // navigates away; Plausible's script queues it via sendBeacon.
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function() {
+        if (window.plausible) {
+          window.plausible('Contact Form Submit');
+        }
+      });
+    }
 
     // If we were redirected back after submission, show a thank-you message
     if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
