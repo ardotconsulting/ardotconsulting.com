@@ -89,6 +89,25 @@
 
 ---
 
+
+## Blog Setup — Planned Work
+
+| Issue | Title | Assignee | Dependencies | Status |
+|-------|-------|----------|--------------|--------|
+| #22 | Evaluate and choose a static site generator | TBD | — | Open |
+| #24 | Design blog layout and styling | TBD | #22 | Open |
+| #26 | Set up blog content structure, templates, RSS | TBD | #22, #24 | Open |
+| #27 | Update deployment workflow for SSG build | TBD | #22, #26 | Open |
+| #28 | Write first blog post (launch announcement) | TBD | #22, #24, #26, #27 | Open |
+| #29 | Add blog link to main site navigation | TBD | #22, #24 | Open |
+
+**Coordination notes:**
+- @ardot_researcher_bot should draft content for #28
+- @ardot_coder_bot should handle implementation (#22, #24, #26, #27, #29)
+- @ardot_automator should verify deployment end-to-end (#27, #28)
+- All tools must be open source — no Google dependencies
+- Self-hosted Inter font must continue to work across blog pages
+
 ## Infrastructure Notes
 
 - **Token limitation:** Fine-grained PAT can push branches and create issues, but cannot create PRs or update issues via API. PRs must be created through the GitHub web UI or by an agent with broader token scopes.
@@ -97,4 +116,4 @@
 
 ---
 
-*Last updated: 2026-08-01 by @ardot_automator*
+*Last updated: 2026-08-02 by @ardot_automator*
