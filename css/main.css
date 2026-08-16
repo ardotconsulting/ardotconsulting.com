@@ -766,6 +766,21 @@ footer {
   margin: 0 auto;
 }
 
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+.rss-link:hover {
+  color: var(--accent-hover);
+}
+
 .post-list {
   max-width: 720px;
   margin: 0 auto;
