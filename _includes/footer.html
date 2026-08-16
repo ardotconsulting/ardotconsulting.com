@@ -1,0 +1,75 @@
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-mark">A</span>
+          ARDOT Consulting
+        </div>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}#services">Services</a></li>
+          <li><a href="{{ '/' | relative_url }}#process">Process</a></li>
+          <li><a href="{{ '/' | relative_url }}#industries">Industries</a></li>
+          <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        © {{ 'now' | date: "%Y" }} ARDOT Consulting. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    // Contact form — fire Plausible custom event on submit
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function() {
+        if (window.plausible) {
+          window.plausible('Contact Form Submit');
+        }
+      });
+    }
+
+    // If we were redirected back after submission, show a thank-you message
+    if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.innerHTML = '<div style="text-align:center;padding:40px 0;">' +
+          '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" style="margin-bottom:16px;">' +
+          '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 15.01 9 11.01"/>' +
+          '</svg>' +
+          '<h3 style="font-size:20px;font-weight:500;margin-bottom:8px;">Thank you!</h3>' +
+          '<p style="color:var(--text-secondary);font-size:15px;">Your message has been sent. We\'ll be in touch soon.</p>' +
+          '</div>';
+      }
+      // Clean the URL
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+
+    // Nav scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 10) {
+        nav.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+      } else {
+        nav.style.borderColor = 'rgba(255, 255, 255, 0.03)';
+      }
+      lastScroll = currentScroll;
+    });
+  </script>

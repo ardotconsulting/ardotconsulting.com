@@ -50,7 +50,7 @@
 
 | Who | What | Branch/Issue | Started | Status |
 |-----|------|-------------|---------|--------|
-| _(empty)_ | | | | | |
+| @ardot_coder_bot | Migrate site to Jekyll + add blog | feat/jekyll-blog (Issue #20) | 2026-08-02 | PR open |
 
 ---
 
@@ -76,6 +76,7 @@
 | 2026-08-01 | Remove "24 hour response" promise | No mechanism to guarantee response time yet |
 | 2026-08-01 | Form uses FormSubmit.co only, no mailto fallback | Mailto was opening user's email client in addition to FormSubmit submission |
 | 2026-08-02 | Use Plausible for analytics (open source, no cookies) | Per Issue #11: avoid Google Analytics. Plausible is open source, privacy-first, self-hostable. Using hosted SaaS initially; will self-host via Docker when VPS is available. |
+| 2026-08-02 | Use Jekyll as blog engine | Native GitHub Pages support, Markdown posts, no custom build needed. Chosen by Ryan over Astro/Eleventy/Hugo. |
 | 2026-08-02 | Self-host Inter font instead of Google Fonts | User prefers avoiding Google services. Downloaded woff2 files (latin subset) served locally from /fonts/. Eliminates fonts.googleapis.com dependency. |
 | 2026-08-02 | Use Bing Webmaster Tools for search indexing (not Google) | Per Issue #11: avoid Google Search Console. Sitemap submitted via robots.txt for all crawlers. Bing Webmaster Tools is Microsoft (proprietary) but is the main non-Google option for active submission. robots.txt + sitemap.xml work for all search engines regardless. |
 

@@ -1,0 +1,59 @@
+# Jekyll configuration for ARDOT Consulting
+# https://jekyllrb.com/docs/configuration/
+
+title: ARDOT Consulting
+description: "AI automation consulting — we help businesses implement AI solutions to automate repetitive tasks, reduce costs, and scale operations efficiently."
+email: ardotconsulting@tutamail.com
+url: "https://www.ardotconsulting.com"
+baseurl: ""
+
+# Blog settings
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults — apply layouts automatically
+defaults:
+  - scope:
+      path: ""          # all files
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""          # all posts
+      type: "posts"
+    values:
+      layout: "post"
+      author: "ARDOT Consulting"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO tag settings
+twitter:
+  card: summary_large_image
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github
+  - README.md
+  - PROJECT_TRACKER.md
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Timezone
+timezone: America/Los_Angeles
