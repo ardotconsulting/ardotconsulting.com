@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog
+description: "Practical insights on AI automation — no hype, just what works. Guides, case studies, and thought leadership from ARDOT Consulting."
+---
+
+<section class="blog-header">
+  <div class="container">
+    <h1>Blog</h1>
+    <p>Practical insights on AI automation — no hype, just what works.</p>
+  </div>
+</section>
+
+<div class="post-list">
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+    <article class="post-card">
+      <div class="post-card-meta">
+        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+        {% if post.tags %}<span class="tag">{{ post.tags | first }}</span>{% endif %}
+        <span>· {{ post.content | number_of_words | divided_by: 200 }} min read</span>
+      </div>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.description }}</p>
+      <a href="{{ post.url | relative_url }}" class="read-more">
+        Read more
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </article>
+    {% endfor %}
+  {% else %}
+    <div style="text-align:center;padding:60px 0;">
+      <p style="font-size:18px;color:var(--text-secondary);margin-bottom:8px;">No posts yet.</p>
+      <p style="font-size:15px;color:var(--text-muted);">Check back soon — we're working on our first articles.</p>
+    </div>
+  {% endif %}
+</div>

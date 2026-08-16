@@ -1,0 +1,78 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — AI Automation Solutions for Your Business{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="author" content="{{ site.title }}">
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+<link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+
+<!-- ===== Open Graph / Social Sharing ===== -->
+<meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — AI Automation Solutions for Your Business{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{% if page.og_url %}{{ page.og_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="en_US">
+{% if page.og_image %}
+<meta property="og:image" content="{{ page.og_image | absolute_url }}">
+{% else %}
+<meta property="og:image" content="https://www.ardotconsulting.com/og-image.png">
+{% endif %}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.title }} — Automate the repetitive. Scale the remarkable.">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — AI Automation Solutions for Your Business{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if page.og_image %}
+<meta name="twitter:image" content="{{ page.og_image | absolute_url }}">
+{% else %}
+<meta name="twitter:image" content="https://www.ardotconsulting.com/og-image.png">
+{% endif %}
+
+<!-- ===== Robots Meta ===== -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- ===== Plausible Analytics (open source, privacy-first, no cookies) ===== -->
+<!-- Setup required: create a Plausible account at plausible.io (or self-host
+     via Docker: https://github.com/plausible/analytics) and register this
+     domain. Analytics data will not appear until the account is active.
+     If self-hosting, replace the src URL below with your instance URL
+     (e.g. https://stats.ardotconsulting.com/js/script.js). -->
+<script defer data-domain="www.ardotconsulting.com" src="https://plausible.io/js/script.js"></script>
+
+<!-- ===== RSS Feed ===== -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} Blog" href="{{ '/feed.xml' | absolute_url }}">
+
+<!-- ===== Structured Data (JSON-LD) ===== -->
+{% if page.layout == 'post' and page.json_ld %}
+<script type="application/ld+json">
+{{ page.json_ld }}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ARDOT Consulting",
+  "description": "{{ site.description }}",
+  "url": "https://www.ardotconsulting.com/",
+  "email": "{{ site.email }}",
+  "areaServed": "Worldwide",
+  "serviceType": "AI Automation Consulting",
+  "knowsAbout": [
+    "AI Strategy",
+    "Workflow Automation",
+    "AI Integration & APIs",
+    "Document Intelligence",
+    "Analytics & Reporting",
+    "Training & Handoff"
+  ]
+}
+</script>
+{% endif %}
+
+<!-- ===== Fonts (self-hosted, no Google Fonts dependency) ===== -->
+<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
