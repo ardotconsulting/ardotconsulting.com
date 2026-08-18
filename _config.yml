@@ -9,6 +9,7 @@ baseurl: ""
 
 # Blog settings
 permalink: /blog/:year/:month/:day/:title/
+future: true
 
 # Collections
 collections:
