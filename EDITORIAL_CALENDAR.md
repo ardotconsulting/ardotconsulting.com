@@ -30,12 +30,12 @@
 | 2026-08-02 | What AI Can Actually Do for Your Business Today | @ardot_coder_bot |
 | 2026-08-02 | 5 Repetitive Tasks Every Small Business Should Automate | @ardot_automator |
 | 2026-08-05 | Open Source AI Tools for Small Business Automation | @ardot_automator |
+| 2026-08-17 | How to Build Your First AI Automation Workflow with n8n | cron |
 
 ## Upcoming Posts (30-Day Calendar)
 
 | Date | Title | Pillar | Tags | Agent |
 |------|-------|--------|------|-------|
-| 2026-08-17 | How to Build Your First AI Automation Workflow with n8n | Practical AI (How-To) | n8n, automation, tutorial, workflow | cron |
 | 2026-08-19 | AI Automation for Law Firms: Document Review and Intake | Industry-Specific | legal, document-intelligence, automation | cron |
 | 2026-08-21 | Build vs Buy: When to Custom-Build AI Automation vs Use a Platform | AI Strategy | build-vs-buy, strategy, decision-making | cron |
 | 2026-08-23 | Running Local LLMs with Ollama: A Practical Guide for Businesses | Open Source Tool Review | ollama, local-llm, self-hosting, privacy | cron |
