@@ -31,6 +31,14 @@
 | 2026-08-02 | 5 Repetitive Tasks Every Small Business Should Automate | @ardot_automator |
 | 2026-08-05 | Open Source AI Tools for Small Business Automation | @ardot_automator |
 | 2026-08-17 | How to Build Your First AI Automation Workflow with n8n | cron |
+| 2026-08-18 | AI Automation for Law Firms: Document Review and Intake | cron |
+| 2026-08-21 | Build vs Buy: When to Custom-Build AI Automation vs Use a Platform | cron |
+| 2026-08-20 | Running Local LLMs with Ollama: A Practical Guide for Businesses | cron |
+| 2026-08-22 | AI Automation for Healthcare: Patient Scheduling and Records | cron |
+| 2026-08-24 | The Real ROI of AI Automation: How to Measure It | cron |
+| 2026-08-26 | Self-Hosting Plausible Analytics: A Step-by-Step Docker Guide | cron |
+| 2026-08-28 | AI Automation for E-Commerce: Inventory, Pricing, and Customer Service | cron |
+| 2026-08-30 | 5 Common AI Automation Mistakes (And How to Avoid Them) | cron |
 
 ## Upcoming Posts (30-Day Calendar)
 
