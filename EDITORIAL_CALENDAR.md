@@ -39,6 +39,8 @@
 | 2026-08-26 | Self-Hosting Plausible Analytics: A Step-by-Step Docker Guide | cron |
 | 2026-08-28 | AI Automation for E-Commerce: Inventory, Pricing, and Customer Service | cron |
 | 2026-08-30 | 5 Common AI Automation Mistakes (And How to Avoid Them) | cron |
+| 2026-09-01 | Huginn vs n8n: Which Open Source Automation Tool Is Right for You? | cron |
+| 2026-09-03 | How ARDOT Automated Its Own Blog: A Behind-the-Scenes Case Study | cron |
 
 ## Upcoming Posts (30-Day Calendar)
 
