@@ -62,6 +62,12 @@
 | 2026-09-14 | From Manual to Automated: A 30-Day AI Automation Transformation | Case Study | case-study, transformation, 30-day-plan | cron |
 | 2026-09-16 | AI Automation Security: Protecting Your Workflows and Data | Practical AI | security, best-practices, automation, privacy | cron |
 
+## Published (next cycle)
+
+| Date | Title | Issue |
+|------|-------|-------|
+| 2026-09-14 | From Manual to Automated: A 30-Day AI Automation Transformation | #53 |
+
 ## Topic Descriptions
 
 ### 2026-08-17 — How to Build Your First AI Automation Workflow with n8n
