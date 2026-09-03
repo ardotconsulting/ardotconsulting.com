@@ -67,6 +67,8 @@
 | Date | Title | Issue |
 |------|-------|-------|
 | 2026-09-14 | From Manual to Automated: A 30-Day AI Automation Transformation | #53 |
+| 2026-09-16 | AI Automation Security: Protecting Your Workflows and Data | — |
+| 2026-09-18 | When NOT to Automate: Knowing Which Tasks to Leave Alone | — |
 
 ## Topic Descriptions
 
