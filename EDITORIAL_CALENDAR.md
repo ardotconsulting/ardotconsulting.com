@@ -69,6 +69,12 @@
 | 2026-09-14 | From Manual to Automated: A 30-Day AI Automation Transformation | #53 |
 | 2026-09-16 | AI Automation Security: Protecting Your Workflows and Data | — |
 | 2026-09-18 | When NOT to Automate: Knowing Which Tasks to Leave Alone | — |
+| 2026-09-20 | Cal.com: Open Source Scheduling That Keeps Your Data Yours | — |
+| 2026-09-22 | AI Automation for Real Estate: Lead Routing, Listings, and Client Follow-Up | — |
+| 2026-09-24 | Building a Customer Support Chatbot with Open Source AI | — |
+| 2026-09-26 | AI Automation for HR: Recruitment, Screening, and Onboarding | — |
+| 2026-09-26 | Automating Email Triage with Open-Source AI: Sort Your Inbox Without a SaaS | — |
+| 2026-09-28 | Building Data Pipelines: Connect Your Business Systems Without Writing Code | — |
 
 ## Topic Descriptions
 
