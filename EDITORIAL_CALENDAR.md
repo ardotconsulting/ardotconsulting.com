@@ -75,6 +75,8 @@
 | 2026-09-26 | AI Automation for HR: Recruitment, Screening, and Onboarding | — |
 | 2026-09-26 | Automating Email Triage with Open-Source AI: Sort Your Inbox Without a SaaS | — |
 | 2026-09-28 | Building Data Pipelines: Connect Your Business Systems Without Writing Code | — |
+| 2026-09-30 | Self-Hosting Metabase: Open-Source Business Analytics Without the SaaS Tax | — |
+| 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management for Your Business | — |
 
 ## Topic Descriptions
 
