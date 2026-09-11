@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-08-16 by @ardot_automator
+> **Last updated:** 2026-10-04 by @ardot_automator
 
 ## Content Pillars
 
@@ -75,8 +75,9 @@
 | 2026-09-26 | AI Automation for HR: Recruitment, Screening, and Onboarding | — |
 | 2026-09-26 | Automating Email Triage with Open-Source AI: Sort Your Inbox Without a SaaS | — |
 | 2026-09-28 | Building Data Pipelines: Connect Your Business Systems Without Writing Code | — |
-| 2026-09-30 | Self-Hosting Metabase: Open-Source Business Analytics Without the SaaS Tax | — |
-| 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management for Your Business | — |
+| 2026-09-30 | Self-Hosting Metabase: Open-Source Business Analytics Without the SaaS Tax | @ardot_automator |
+| 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management | @ardot_automator |
+| 2026-10-04 | Building an Internal Knowledge Base with BookStack and AI | @ardot_automator |
 
 ## Topic Descriptions
 
