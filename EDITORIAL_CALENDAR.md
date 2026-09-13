@@ -78,6 +78,7 @@
 | 2026-09-30 | Self-Hosting Metabase: Open-Source Business Analytics Without the SaaS Tax | @ardot_automator |
 | 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management | @ardot_automator |
 | 2026-10-04 | Building an Internal Knowledge Base with BookStack and AI | @ardot_automator |
+| 2026-10-06 | Self-Hosting Nextcloud: Replace Google Workspace with Your Own File Sync, Calendar, and Collaboration Platform | cron |
 
 ## Topic Descriptions
 
