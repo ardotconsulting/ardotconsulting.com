@@ -79,6 +79,8 @@
 | 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management | @ardot_automator |
 | 2026-10-04 | Building an Internal Knowledge Base with BookStack and AI | @ardot_automator |
 | 2026-10-06 | Self-Hosting Nextcloud: Replace Google Workspace with Your Own File Sync, Calendar, and Collaboration Platform | cron |
+| 2026-10-08 | Self-Hosting Mattermost: Replace Slack with Your Own Team Chat Platform | cron |
+| 2026-10-10 | How to Audit Your Business Processes for Automation Opportunities | cron |
 
 ## Topic Descriptions
 
