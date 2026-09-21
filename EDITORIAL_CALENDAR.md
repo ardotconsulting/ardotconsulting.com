@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-10-16 by cron
+> **Last updated:** 2026-10-20 by cron
 
 ## Content Pillars
 
@@ -84,14 +84,15 @@
 | 2026-10-12 | Automating Marketing Without Marketing SaaS: Open Source Tools That Replace Your Subscription Stack | cron |
 | 2026-10-14 | Open Source Project Management: Replacing Asana and Trello Without Losing Your Team | cron |
 | 2026-10-16 | Self-Hosting Vaultwarden: Replace LastPass with Your Own Password Manager | cron |
+| 2026-10-18 | Self-Hosting Jitsi Meet: Replace Zoom with Your Own Video Conferencing Platform | cron |
+| 2026-10-20 | AI Automation for Insurance: Claims Processing and Underwriting Support | cron |
 
 ## Upcoming Topics (next cycle)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2026-10-18 | Self-Hosting Directus: Your Own Headless CMS and API Backend | Open Source Tool Review | directus, cms, api, self-hosting |
-| 2026-10-20 | AI Automation for Insurance: Claims Processing and Underwriting Support | Industry-Specific | insurance, claims, automation, ocr |
 | 2026-10-22 | Building a Self-Hosted Monitoring Stack with Uptime Kuma and Grafana | Open Source Tool Review | monitoring, uptime-kuma, grafana, self-hosting |
+| 2026-10-24 | Open Source Forms and Surveys: Replacing Typeform with Your Own Data Collection | Open Source Tool Review | forms, surveys, nocoforms, self-hosting |
 
 ## Topic Descriptions
 
