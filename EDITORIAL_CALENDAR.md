@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-10-20 by cron
+> **Last updated:** 2026-10-24 by cron
 
 ## Content Pillars
 
@@ -87,12 +87,14 @@
 | 2026-10-18 | Self-Hosting Jitsi Meet: Replace Zoom with Your Own Video Conferencing Platform | cron |
 | 2026-10-20 | AI Automation for Insurance: Claims Processing and Underwriting Support | cron |
 
+| 2026-10-22 | Self-Hosting NocoDB: Replace Airtable with Your Own No-Code Database Platform | cron |
+| 2026-10-24 | Building a Self-Hosted Monitoring Stack with Uptime Kuma and Grafana | cron |
+
 ## Upcoming Topics (next cycle)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2026-10-22 | Building a Self-Hosted Monitoring Stack with Uptime Kuma and Grafana | Open Source Tool Review | monitoring, uptime-kuma, grafana, self-hosting |
-| 2026-10-24 | Open Source Forms and Surveys: Replacing Typeform with Your Own Data Collection | Open Source Tool Review | forms, surveys, nocoforms, self-hosting |
+| 2026-10-26 | Open Source Forms and Surveys: Replacing Typeform with Your Own Data Collection | Open Source Tool Review | forms, surveys, nocoforms, self-hosting |
 
 ## Topic Descriptions
 
