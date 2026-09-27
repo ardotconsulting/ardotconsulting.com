@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-10-24 by cron
+> **Last updated:** 2026-09-27 by cron
 
 ## Content Pillars
 
@@ -74,6 +74,7 @@
 | 2026-09-24 | Building a Customer Support Chatbot with Open Source AI | — |
 | 2026-09-26 | AI Automation for HR: Recruitment, Screening, and Onboarding | — |
 | 2026-09-26 | Automating Email Triage with Open-Source AI: Sort Your Inbox Without a SaaS | — |
+| 2026-09-27 | AI Automation for Logistics: Route Planning, Fleet Tracking, and Delivery Coordination | cron |
 | 2026-09-28 | Building Data Pipelines: Connect Your Business Systems Without Writing Code | — |
 | 2026-09-30 | Self-Hosting Metabase: Open-Source Business Analytics Without the SaaS Tax | @ardot_automator |
 | 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management | @ardot_automator |
