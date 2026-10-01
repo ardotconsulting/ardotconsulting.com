@@ -96,6 +96,8 @@
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
 | 2026-11-01 | Self-Hosting OpnForm: Replace Typeform With Your Own Form Builder | Open Source Tool Review | forms, opnform, formbricks, surveys, self-hosting |
+| 2026-11-03 | Self-Hosting Immich: Replace Google Photos With Your Own Photo Platform | Open Source Tool Review | immich, photos, privacy, docker, self-hosting |
+| 2026-11-05 | AI Automation for Hospitality: Reservations, Guest Feedback, and Staff Scheduling | Industry-Specific | hospitality, automation, n8n, ollama, odoo, calcom, open-source |
 
 ## Topic Descriptions
 
