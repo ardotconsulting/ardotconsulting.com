@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-09-27 by cron
+> **Last updated:** 2026-11-13 by cron
 
 ## Content Pillars
 
