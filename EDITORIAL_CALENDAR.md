@@ -99,6 +99,7 @@
 | 2026-11-03 | Self-Hosting Immich: Replace Google Photos With Your Own Photo Platform | Open Source Tool Review | immich, photos, privacy, docker, self-hosting |
 | 2026-11-05 | AI Automation for Hospitality: Reservations, Guest Feedback, and Staff Scheduling | Industry-Specific | hospitality, automation, n8n, ollama, odoo, calcom, open-source |
 | 2026-11-07 | AI Automation for Field Services: Dispatch, Job Tracking, and Customer Communications | Industry-Specific | field-services, automation, n8n, ollama, odoo, dispatch, open-source, trades |
+| 2026-11-17 | Backing Up Your Self-Hosted Stack: A Practical Disaster Recovery Guide | Practical AI | backups, disaster-recovery, self-hosting, docker, restic, borgbackup, strategy |
 
 ## Topic Descriptions
 
