@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-11-13 by cron
+> **Last updated:** 2026-12-03 by cron
 
 ## Content Pillars
 
@@ -184,6 +184,21 @@
 **Pillar:** Practical AI
 **Tags:** security, best-practices, automation, privacy
 **Description:** Security best practices for AI automation: API key management, network segmentation for self-hosted tools, encrypting data at rest, access control in n8n, secure Ollama deployment. Include a security checklist.
+
+## Published (recent cycle)
+
+| Date | Title | Issue |
+|------|-------|-------|
+| 2026-11-29 | The True Cost of Self-Hosting vs SaaS: A Real-World Comparison | — |
+| 2026-12-01 | Self-Hosting Appsmith: Build Internal Business Apps Without Retool | — |
+| 2026-12-03 | AI Automation for Restaurants: Reservations, Inventory, and Staff Scheduling | — |
+
+## Upcoming Topics (suggested next)
+
+| Date | Title | Pillar | Tags |
+|------|-------|--------|------|
+| 2026-12-05 | Self-Hosting Umami: Privacy-Friendly Web Analytics Without Cookies or SaaS | Open Source Tool Review | umami, analytics, privacy, docker, self-hosting, plausible-alternative |
+| 2026-12-07 | AI Automation for Retail: Inventory Forecasting, POS Integration, and Customer Loyalty | Industry-Specific | retail, pos, inventory, loyalty, n8n, ollama, nocodb, open-source |
 
 ## Notes
 
