@@ -192,13 +192,17 @@
 | 2026-11-29 | The True Cost of Self-Hosting vs SaaS: A Real-World Comparison | — |
 | 2026-12-01 | Self-Hosting Appsmith: Build Internal Business Apps Without Retool | — |
 | 2026-12-03 | AI Automation for Restaurants: Reservations, Inventory, and Staff Scheduling | — |
+| 2026-12-05 | Self-Hosting ERPNext: Replace NetSuite and SAP with Your Own Open Source ERP | — |
+| 2026-12-07 | Multi-Location Inventory Automation With Open-Source Tools | — |
 
 ## Upcoming Topics (suggested next)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2026-12-05 | Self-Hosting Umami: Privacy-Friendly Web Analytics Without Cookies or SaaS | Open Source Tool Review | umami, analytics, privacy, docker, self-hosting, plausible-alternative |
-| 2026-12-07 | AI Automation for Retail: Inventory Forecasting, POS Integration, and Customer Loyalty | Industry-Specific | retail, pos, inventory, loyalty, n8n, ollama, nocodb, open-source |
+| 2026-12-09 | Self-Hosting Umami: Privacy-Friendly Web Analytics Without Cookies or SaaS | Open Source Tool Review | umami, analytics, privacy, docker, self-hosting, plausible-alternative |
+| 2026-12-11 | AI Automation for Retail: Inventory Forecasting, POS Integration, and Customer Loyalty | Industry-Specific | retail, pos, inventory, loyalty, n8n, ollama, nocodb, open-source |
+| 2026-12-13 | Open-Source CRM Roundup: Odoo, SuiteCRM, and Fat Free CRM Compared | Open Source Tool Review | crm, odoo, suitecrm, fatfreecrm, comparison, self-hosting |
+| 2026-12-15 | When Your Business Outgrows Spreadsheets: Signals and Migrations | AI Strategy | spreadsheets, migration, nocodb, directus, data-maturity |
 
 ## Notes
 
