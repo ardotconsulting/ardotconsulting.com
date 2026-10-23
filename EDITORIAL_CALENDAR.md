@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-12-03 by cron
+> **Last updated:** 2026-12-15 by cron
 
 ## Content Pillars
 
@@ -194,15 +194,18 @@
 | 2026-12-03 | AI Automation for Restaurants: Reservations, Inventory, and Staff Scheduling | — |
 | 2026-12-05 | Self-Hosting ERPNext: Replace NetSuite and SAP with Your Own Open Source ERP | — |
 | 2026-12-07 | Multi-Location Inventory Automation With Open-Source Tools | — |
+| 2026-12-09 | Automating Procurement and Purchase Orders With Open-Source Tools | — |
+| 2026-12-11 | Self-Hosting Umami: Privacy-First Web Analytics Without Google Analytics | — |
+| 2026-12-13 | Automating Social Media Management with Open Source Tools | — |
+| 2026-12-15 | When Your Business Outgrows Spreadsheets: Signals and Migrations | — |
 
 ## Upcoming Topics (suggested next)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2026-12-09 | Self-Hosting Umami: Privacy-Friendly Web Analytics Without Cookies or SaaS | Open Source Tool Review | umami, analytics, privacy, docker, self-hosting, plausible-alternative |
-| 2026-12-11 | AI Automation for Retail: Inventory Forecasting, POS Integration, and Customer Loyalty | Industry-Specific | retail, pos, inventory, loyalty, n8n, ollama, nocodb, open-source |
-| 2026-12-13 | Open-Source CRM Roundup: Odoo, SuiteCRM, and Fat Free CRM Compared | Open Source Tool Review | crm, odoo, suitecrm, fatfreecrm, comparison, self-hosting |
-| 2026-12-15 | When Your Business Outgrows Spreadsheets: Signals and Migrations | AI Strategy | spreadsheets, migration, nocodb, directus, data-maturity |
+| 2026-12-17 | Self-Hosting BookStack: Build a Company Knowledge Base That Actually Gets Used | Open Source Tool Review | bookstack, knowledge-base, documentation, self-hosting, open-source |
+| 2026-12-19 | AI Automation for Clinics: Patient Intake, Reminders, and Records Management | Industry-Specific | healthcare, clinics, patient-intake, reminders, n8n, ollama, open-source |
+| 2026-12-21 | Automating Accounts Payable: From Invoice Receipt to Payment Approval | Practical AI | accounts-payable, invoices, automation, ocr, n8n, ollama, open-source |
 
 ## Notes
 
