@@ -207,6 +207,7 @@ Here's a year-end reporting workflow you can build in n8n:
 
 Here's the n8n workflow exported as JSON (you can import this directly into n8n):
 
+{% raw %}
 ```json
 {
   "nodes": [
@@ -254,6 +255,7 @@ Here's the n8n workflow exported as JSON (you can import this directly into n8n)
   ]
 }
 ```
+{% endraw %}
 
 > **Tip:** You'll need to add authentication headers to each HTTP Request node. Store your API keys in n8n's built-in credentials manager — never hard-code them in the workflow.
 
